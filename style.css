@@ -1,0 +1,136 @@
+body {
+  justify-content: center;
+}
+
+header {
+  text-align: center;
+  font-family: Impact, Charcoal, sans-serif;
+  color: hotpink;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 325px;
+  justify-content: center;
+  align-content: stretch;
+  align-items: center;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.square {
+  display: inline;
+  width: 100px;
+  height: 100px;
+  align-self: center;
+}
+
+#container>.square:nth-child(1) {
+  border-right: 5px solid black;
+  border-bottom: 5px solid black;
+  order: 0;
+  flex: 0 1 auto;
+  shape-outside: circle();
+}
+
+#container>.square:nth-child(2) {
+  border-bottom: 5px solid black;
+  border-right: 5px solid black;
+  order: 0;
+  flex: 0 1 auto;
+}
+
+#container>.square:nth-child(3) {
+  border-bottom: 5px solid black;
+  order: 0;
+  flex: 0 1 auto;
+}
+
+#container>.square:nth-child(4) {
+  border-bottom: 5px solid black;
+  border-right: 5px solid black;
+  order: 0;
+  flex: 0 1 auto;
+}
+
+#container>.square:nth-child(5) {
+  border-bottom: 5px solid black;
+  border-right: 5px solid black;
+  order: 0;
+  flex: 0 1 auto;
+}
+
+#container>.square:nth-child(6) {
+  border-bottom: 5px solid black;
+  order: 0;
+  flex: 0 1 auto;
+}
+
+#container>.square:nth-child(7) {
+  border-right: 5px solid black;
+  order: 0;
+  flex: 0 1 auto;
+}
+
+#container>.square:nth-child(8) {
+  border-right: 5px solid black;
+  order: 0;
+  flex: 0 1 auto;
+}
+
+#container>.square:nth-child(9) {
+  order: 0;
+  flex: 0 1 auto;
+}
+
+.square p {
+  text-align: center;
+  font-size: 2em;
+  font-family: "Arial Black", Gadget, sans-serif;
+}
+
+p.player-one {
+  color: hotpink;
+}
+
+p.player-two {
+  color: paleturquoise;
+}
+
+
+.circle{
+  width: 65%;
+  height: 65%;
+  border: 15px solid hotpink;
+  border-radius: 50%;
+ }
+
+.dame {
+   width: 100px;
+   height: 100px;
+   position: relative;
+  transform:rotate(45deg);
+}
+
+.dame:before, .dame:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: paleturquoise;
+}
+
+.dame:before {
+  left: 50%;
+  width: 30%;
+  margin-left: -15%;
+  height: 100%;
+}
+
+.dame:after {
+  top: 50%;
+  height: 30%;
+  margin-top: -15%;
+  width: 100%;
+}
